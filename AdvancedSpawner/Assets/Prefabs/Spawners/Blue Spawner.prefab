@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &715304712172936208
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7746120641055297005, guid: a585a61eca6aeaa429a8c8ac20ba4e8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746120641055297005, guid: a585a61eca6aeaa429a8c8ac20ba4e8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746120641055297005, guid: a585a61eca6aeaa429a8c8ac20ba4e8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746120641055297005, guid: a585a61eca6aeaa429a8c8ac20ba4e8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746120641055297005, guid: a585a61eca6aeaa429a8c8ac20ba4e8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746120641055297005, guid: a585a61eca6aeaa429a8c8ac20ba4e8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746120641055297005, guid: a585a61eca6aeaa429a8c8ac20ba4e8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746120641055297005, guid: a585a61eca6aeaa429a8c8ac20ba4e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746120641055297005, guid: a585a61eca6aeaa429a8c8ac20ba4e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746120641055297005, guid: a585a61eca6aeaa429a8c8ac20ba4e8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7770843491315430711, guid: a585a61eca6aeaa429a8c8ac20ba4e8c, type: 3}
+      propertyPath: _gizmosColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7770843491315430711, guid: a585a61eca6aeaa429a8c8ac20ba4e8c, type: 3}
+      propertyPath: _gizmosColor.g
+      value: 0.8744573
+      objectReference: {fileID: 0}
+    - target: {fileID: 7770843491315430711, guid: a585a61eca6aeaa429a8c8ac20ba4e8c, type: 3}
+      propertyPath: _gizmosColor.r
+      value: 0.31132066
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896756929460527732, guid: a585a61eca6aeaa429a8c8ac20ba4e8c, type: 3}
+      propertyPath: m_Name
+      value: Blue Spawner
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a585a61eca6aeaa429a8c8ac20ba4e8c, type: 3}
