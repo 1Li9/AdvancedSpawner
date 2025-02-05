@@ -7,7 +7,7 @@ public class Target : MonoBehaviour
     [SerializeField] private float _speed;
 
     private Transform _currentPoint;
-    private float _currentPointChangeDistance = .2f;
+    private readonly float _currentPointChangeSquareDistance = .2f;
 
     private void Awake()
     {
@@ -20,7 +20,9 @@ public class Target : MonoBehaviour
 
     private void Move()
     {
-        if (Vector3.Distance(transform.position, _currentPoint.position) > _currentPointChangeDistance)
+        float squareDistance = (transform.position - _currentPoint.position).sqrMagnitude;
+
+        if (squareDistance > _currentPointChangeSquareDistance)
             transform.position = Vector3.MoveTowards(transform.position, _currentPoint.position, Time.deltaTime * _speed);
         else
             SelectNextPoint();

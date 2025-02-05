@@ -28,6 +28,6 @@ public class Spawner : MonoBehaviour
         Vector3 position = transform.position + new Vector3(positionOffset.x, 0, positionOffset.y) + Vector3.up * _yOffset;
 
         _prefab.transform.SetPositionAndRotation(position, Quaternion.identity);
-        Instantiate(_prefab).Target = _target;
+        Instantiate(_prefab).SetTarget(_target);
     }
 }
