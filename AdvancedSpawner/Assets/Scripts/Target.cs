@@ -2,17 +2,17 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
-    [SerializeField] private Transform _beginPoint;
-    [SerializeField] private Transform _endPoint;
+    [SerializeField] private Transform[] _points;
     [SerializeField] private float _speed;
 
     private Transform _currentPoint;
-    private readonly float _currentPointChangeSquareDistance = .2f;
+    private int _currentPointIndex = 0;
+    private readonly float _pointChangeDistance = .2f;
 
     private void Awake()
     {
-        transform.position = _beginPoint.position;
-        _currentPoint = _endPoint;
+        _currentPoint = _points[_currentPointIndex];
+        transform.position = _currentPoint.position;
     }
 
     private void Update() =>
@@ -22,7 +22,7 @@ public class Target : MonoBehaviour
     {
         float squareDistance = (transform.position - _currentPoint.position).sqrMagnitude;
 
-        if (squareDistance > _currentPointChangeSquareDistance)
+        if (squareDistance > _pointChangeDistance)
             transform.position = Vector3.MoveTowards(transform.position, _currentPoint.position, Time.deltaTime * _speed);
         else
             SelectNextPoint();
@@ -30,9 +30,11 @@ public class Target : MonoBehaviour
 
     private void SelectNextPoint()
     {
-        if (_currentPoint == _beginPoint)
-            _currentPoint = _endPoint;
+        if (_currentPointIndex + 1 < _points.Length)
+            _currentPointIndex++;
         else
-            _currentPoint = _beginPoint;
+            _currentPointIndex = 0;
+
+        _currentPoint = _points[_currentPointIndex];
     }
 }

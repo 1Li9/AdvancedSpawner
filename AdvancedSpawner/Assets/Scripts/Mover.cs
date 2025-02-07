@@ -18,6 +18,6 @@ public class Mover : MonoBehaviour
         direction = direction.normalized;
 
         transform.forward = direction;
-        transform.Translate(_speed * Time.deltaTime * transform.forward, Space.World);
+        transform.position = Vector3.MoveTowards(transform.position, _target.transform.position, Time.deltaTime * _speed);
     }
 }

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6683533296058132631
+--- !u!1001 &191170439067582608
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -48,9 +48,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7770843491315430711, guid: a585a61eca6aeaa429a8c8ac20ba4e8c, type: 3}
+      propertyPath: _gizmosColor.b
+      value: 0.39999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7770843491315430711, guid: a585a61eca6aeaa429a8c8ac20ba4e8c, type: 3}
+      propertyPath: _gizmosColor.g
+      value: 0.47673306
+      objectReference: {fileID: 0}
+    - target: {fileID: 7770843491315430711, guid: a585a61eca6aeaa429a8c8ac20ba4e8c, type: 3}
+      propertyPath: _gizmosColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8896756929460527732, guid: a585a61eca6aeaa429a8c8ac20ba4e8c, type: 3}
       propertyPath: m_Name
-      value: Green Spawner
+      value: Red Spawner Point
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
